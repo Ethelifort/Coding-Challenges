@@ -8,10 +8,26 @@ Note: If the number is a multiple of both 3 and 5, only count it once.
 //My Solution
 
 
+
 function solution(number){
-  
-}
-  
+    let arrNum = [];
+    let multiplesOf3and5 = [];
+    
+    // Push every number 1 through number into arrNum.
+    for (let i = 0; i < number; i++) {
+      arrNum.push(i);
+    }
 
+    // Check if i is a multiple of 3 or 5. If so push it into empty array.
+    for (let i = 0; i < arrNum.length; i++) {
+      if (i % 3 === 0 || i % 5 === 0) {
+        multiplesOf3and5.push(i);
+      }
+    }
 
-//Tests
+    //Add multiples and store them here.
+    let sumOfMultiples = multiplesOf3and5.reduce((sum, num) => sum + num, 0);
+    
+    return sumOfMultiples;
+  }
+  
