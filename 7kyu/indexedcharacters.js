@@ -6,25 +6,25 @@ and odd-indexed characters of s are grouped and groups are space-separated (see 
 
 function sortMyString(S) {
 
-    let evenWords = '';
-    let oddWords = ''; 
-  
-    for(i = 0;i<S.length;i++){
-  
-       if(i % 2 ==0){
-        evenWords = evenWords + S[i];
-       }
-  
-       else {
-        oddWords = oddWords + S[i];
-       }
-  
-    }
-    return evenWords.concat(' ', oddWords);
+  let evenWords = '';
+  let oddWords = ''; 
+
+  for(i = 0;i<S.length;i++){
+
+     if(i % 2 ==0){
+      evenWords = evenWords + S[i];
+     }
+
+     else {
+      oddWords = oddWords + S[i];
+     }
+
   }
-  
-  
-  
-  
-  //Tests
-  console.log(sortMyString("YCOLUE'VREER"));   
+  return evenWords.concat(' ', oddWords);
+}
+
+
+
+
+//Tests
+console.log(sortMyString("YCOLUE'VREER"));   
