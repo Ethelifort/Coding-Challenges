@@ -24,5 +24,5 @@ function oddOrEven(array) {
   
   //Tests
   
-  oddOrEven([0, 2, 4]);
+  oddOrEven([ 1, 1, 2, -2, 5, 2, 4, 4, -1, -2, 5 ]);
   
