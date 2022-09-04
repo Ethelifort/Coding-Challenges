@@ -1,9 +1,10 @@
 /* Problem
-Make a function that will return a greeting statement that uses an input; your program should return, "Hello, <name> how are you doing today?".*/
+Write a function which converts the input string to uppercase.
+*/
 
+function makeUpperCase(str) {
+    return str.toUpperCase();
+  }
 
-function greet(name){
-    return `Hello, ${name} how are you doing today?`;
-    }
-    //Tests
-    console.log(greet("Ryan"), "Hello, Ryan how are you doing today?");
+//Tests
+console.log(makeUpperCase("Ryan"));
