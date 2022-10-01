@@ -11,4 +11,4 @@ const reverseSeq = n => {
     return arr.reverse()
   };
   //Tests
-  reverseSeq(5);
+  reverseSeq(10);
