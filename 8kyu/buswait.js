@@ -6,8 +6,8 @@ Bob is working as a bus driver. However, he has become extremely popular amongst
 function enough(cap, on, wait) {
     if(cap >= wait + on){
       return 0;
-    } else{
-      return on - wait;
+   } else{
+      return wait - cap + on;
     }
   }
   
